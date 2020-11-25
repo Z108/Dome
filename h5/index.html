@@ -3,8 +3,37 @@
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			.warp{
+				width: 400px;
+				height: 200px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top:-100px ;
+				margin-left: -200px;
+				border: 1px solid #999;
+			}
+			p{
+				line-height: 200px;
+				text-align: center;
+				font-size: 30px;
+			}
+			span{
+				background: rgba(0,0,0,0.5);
+				padding: 5px 10px;
+				color: #fff;
+				margin: 5px;
+				
+			}
+		</style>
 	</head>
 	<body>
-		
+		<div class="warp">
+			<p><span class="hour">00</span>:<span class="mintue">00</span>:<span class="second">00</span></p>
+		</div>
 	</body>
 </html>
+<script type="text/javascript" src="js/jq.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
