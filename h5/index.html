@@ -3,8 +3,46 @@
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			#warp {
+				width: 760px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border:1px solid #ccc
+			}
+
+			#box {
+				width: 380px;
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			input{
+				display: none;
+			}
+			label{
+				
+			}
+			.export{
+				display: inline-block;
+				border: 1px solid #ccc;
+				padding: 5px 10px;
+				margin: 0 auto;
+			}
+		</style>
 	</head>
 	<body>
-		
+		<div id="warp">
+			<div id="box">
+				<img src="./img/1.jpg">
+			</div>
+		</div>
+		<span class="export"><input type="file" class="file" id="imgFile" accept="image/png, image/jpeg, image/gif, image/jpg"/><label for="imgFile">请选择图片</label></span>
 	</body>
 </html>
+<script type="text/javascript" src="js/style.js"></script>
