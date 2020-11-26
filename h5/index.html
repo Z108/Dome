@@ -3,8 +3,60 @@
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<style type="text/css">
+			#app {
+				display: flex;
+			}
+
+			#warp {
+				width: 800px;
+				position: relative;
+			}
+
+			#warp>img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+
+			.box {
+				width: 40px;
+				height: 40px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				border: 1px solid #ccc;
+			}
+
+			#show {
+				width:160px;
+				height:160px;
+				border: 1px solid #ccc;
+				overflow: hidden;
+				position: relative;
+			}
+
+			#show>img {
+				width: 3200px;
+				height: auto;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		</style>
 	</head>
 	<body>
-		
+		<div id="app">
+			<div id="warp">
+				<img src="./img/e7d4cac126941b5a-396dcc73e3007ef8-4ca9138f73988a352f7b31f6ddc49458.jpg" class="smallImg">
+				<span class="box"></span>
+			</div>
+			<div id="show">
+				<img src="./img/e7d4cac126941b5a-396dcc73e3007ef8-4ca9138f73988a352f7b31f6ddc49458.jpg" class="bigImg">
+			</div>
+		</div>
 	</body>
 </html>
+<script type="text/javascript" src="./js/style.js"></script>
