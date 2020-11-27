@@ -1,0 +1,35 @@
+{
+	"id": 0,
+	"code": "ok",
+	"status": 200,
+	"statusText": "请求成功",
+	"data": [{
+		"id":0,
+		"name":"aaa",
+		"img":"./img/001.jpg"
+	},{
+		"id":1,
+		"name":"aaa",
+		"img":"./img/002.jpg"
+	},{
+		"id":2,
+		"name":"aaa",
+		"img":"./img/003.jpg"
+	},{
+		"id":3,
+		"name":"aaa",
+		"img":"./img/004.jpg"
+	},{
+		"id":4,
+		"name":"aaa",
+		"img":"./img/005.jpg"
+	},{
+		"id":5,
+		"name":"aaa",
+		"img":"./img/006.jpg"
+	},{
+		"id":6,
+		"name":"aaa",
+		"img":"./img/007.jpg"
+	}]
+}

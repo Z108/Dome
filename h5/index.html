@@ -3,8 +3,76 @@
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			#warp{
+				width: 700px;
+				height: 420px;
+				overflow: hidden;
+				position: relative;
+				margin: 0 auto;
+			}
+			#banner{
+				width: 100%;
+				height: 100%;
+			}
+			img{
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			#warp>span{
+				width: 40px;
+				height: 80px;
+				background: rgba(0,0,0,0.5);
+				color: #fff;
+				position: absolute;
+				top: 50%;
+				margin-top: -40px;
+				font-size: 40px;
+				line-height: 80px;
+			}
+			.Left{
+				left: 0;
+				
+			}
+			.right{
+				right: 0;
+				
+			}
+			.dote{
+				display: flex;
+				justify-content: center;
+				width: 100%;
+				position: absolute;
+				bottom: 20px;
+				left: 0;
+				background: rgba(0,0,0,0.5);
+			}
+			.dote>li{
+				width: 10px ;
+				height:10px;
+				border-radius: 50%;
+				background: #fff;
+				margin-right: 5px;
+			}
+			.dote>.active{
+				background: orange;
+			}
+		</style>
 	</head>
 	<body>
-		
+		<div id="warp">
+			<div id="banner"></div>
+			<ul class="dote">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<span class="Left"><</span> 
+			<span class="right">></span>
+		</div>
 	</body>
 </html>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
