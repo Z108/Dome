@@ -1,18 +1,7 @@
 let file = document.querySelector('.file') //获取input file 节点
 let Img = document.querySelector('img')
 getBackgroundColor()
-// 下面函数执行的效果是一样的，只是需要针对不同的浏览器执行不同的 js 函数而已
-// let url = null
-// if (window.createObjectURL != undefined) { // basic
-// 	url = window.createObjectURL(img);
-// } else if (window.URL != undefined) { // mozilla(firefox)
-// 	url = window.URL.createObjectURL(img);
-// } else if (window.webkitURL != undefined) { // webkit or chrome
-// 	url = window.webkitURL.createObjectURL(img);
-// }
-// file.src = url
-// img.src = url
-// })
+
 
 
 file.addEventListener('change', (e) => { //添加事件监听 change事件 上传文件
@@ -22,14 +11,28 @@ file.addEventListener('change', (e) => { //添加事件监听 change事件 上�
 		alert('图片只能是jpg、gif、png格式！')
 		return
 	}
+	// createObjectURL 方法
+	// 只在当前页面查看
+	// 下面函数执行的效果是一样的，只是需要针对不同的浏览器执行不同的 js 函数而已
+	let url = null
+	if (window.createObjectURL != undefined) { // basic
+		url = window.createObjectURL(img);
+	} else if (window.URL != undefined) { // mozilla(firefox)
+		url = window.URL.createObjectURL(img);
+	} else if (window.webkitURL != undefined) { // webkit or chrome
+		url = window.webkitURL.createObjectURL(img);
+	}
+	Img.src = url;
+	getBackgroundColor()
 
-	let reader = new FileReader();
-	reader.readAsDataURL(img);
-	reader.onload = function(e) {
-		Img.src = this.result;
-		getBackgroundColor()
-		console.log(this.result)
-	};
+	// FileReader 方法
+	// let reader = new FileReader();
+	// reader.readAsDataURL(img);
+	// reader.onload = function(e) {
+	// 	Img.src = this.result;
+	// 	getBackgroundColor()
+	// 	console.log(this.result)
+	// };
 })
 
 function getBackgroundColor() {
